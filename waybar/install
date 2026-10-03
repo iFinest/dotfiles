@@ -1,0 +1,126 @@
+#!/usr/bin/env bash
+
+DEPENDENCIES=(
+	bluez-utils
+	brightnessctl
+	fzf
+	libnotify
+	networkmanager
+	ttf-googlesanscode-nerd
+	pacman-contrib
+	waybar
+)
+
+install_dependencies() {
+	printf "%bInstalling dependencies...%b\n" "$fg_blue" "$md_reset"
+
+	local package
+	for package in "${DEPENDENCIES[@]}"; do
+		if pacman -Qi "$package" &>/dev/null; then
+			#printf "[%bSKIP%b] %s\n" "$md_dim" "$md_reset" "$package"
+			continue
+		else
+			printf "\n[    ] %s...\n" "$package"
+
+			if sudo pacman -S --noconfirm "$package"; then
+				printf "\n[%bDONE%b] %s\n" "$fg_green" "$md_reset" "$package"
+			else
+				printf "\n[%bERR %b] %s\n" "$fg_red" "$md_reset" "$package"
+				((errors += 1))
+			fi
+		fi
+	done
+}
+
+create_service_files() {
+	printf "%bCreating Service Files...%b\n" "$fg_blue" "$md_reset"
+	mkdir -p "$HOME/.config/systemd/user"
+	cat > "$HOME/.config/systemd/user/waybar-main.service" <<'EOF'
+[Unit]
+Description=Waybar - Main Monitor
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/waybar -c %h/.config/waybar/config.jsonc
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+EOF
+
+cat > "$HOME/.config/systemd/user/waybar-secondary.service" <<'EOF'
+[Unit]
+Description=Waybar - Secondary Monitor
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/waybar -c %h/.config/waybar/config-secondary.jsonc
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+EOF
+
+cat > "$HOME/.config/systemd/user/waybar-stat.service" <<'EOF'
+[Unit]
+Description=Waybar - Stat Monitor
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/waybar -c %h/.config/waybar/config-statmonitor.jsonc
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
+EOF
+}
+
+configure_services() {
+	printf "%bConfiguring Waybar services...%b\n" "$fg_blue" "$md_reset"
+
+	systemctl --user disable --now waybar.service &>/dev/null || true
+
+	systemctl --user daemon-reload
+
+	if systemctl --user enable \
+		waybar-main.service \
+		waybar-secondary.service \
+		waybar-stat.service &&
+		systemctl --user restart \
+			waybar-main.service \
+			waybar-secondary.service \
+			waybar-stat.service; then
+
+		printf "[%bDONE%b] Waybar services configured\n" "$fg_green" "$md_reset"
+	else
+		printf "[%bERR %b] Failed to configure Waybar services\n" "$fg_red" "$md_reset"
+		((errors += 1))
+	fi
+}
+
+main() {
+	md_reset=$'\e[0m'
+	md_dim=$'\e[2m'
+	fg_red=$'\e[31m'
+	fg_green=$'\e[32m'
+	fg_blue=$'\e[34m'
+
+	local errors=0
+
+	install_dependencies
+	create_service_files
+	configure_services
+
+	if ((errors > 0)); then
+		printf "Installation completed with %b%d errors%b.\n" \
+			"$fg_red" "$errors" "$md_reset"
+		return 1
+	fi
+
+	printf "%bInstallation complete!%b\n" "$fg_green" "$md_reset"
+}
+
+main

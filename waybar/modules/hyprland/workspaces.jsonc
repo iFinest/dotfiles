@@ -1,0 +1,9 @@
+{
+	"hyprland/workspaces": {
+		"all-outputs": false,
+		"format": "{name}",
+		"on-scroll-up": "hyprctl dispatch \"hl.dsp.focus({ workspace = 'r+1' })\"",
+		"on-scroll-down": "hyprctl dispatch \"hl.dsp.focus({ workspace = 'r-1' })\"",
+		"cursor": true
+	}
+}

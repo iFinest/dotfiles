@@ -1,0 +1,9 @@
+{
+    "custom/mpris": {
+        "exec": "~/.config/waybar/scripts/mpris",
+        "return-type": "json",
+        "interval": 1,
+        "max-length": 1000,
+        "on-click": "playerctl play-pause"
+    }
+}

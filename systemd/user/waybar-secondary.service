@@ -1,0 +1,11 @@
+[Unit]
+Description=Waybar - Secondary Monitor
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/waybar -c %h/.config/waybar/config-secondary.jsonc
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

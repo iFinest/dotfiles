@@ -1,0 +1,13 @@
+{
+	"hyprland/window": {
+		"separate-outputs": true,
+		"rewrite": {
+			"": "Desktop",
+			"kitty": "Terminal",
+			"fish": "Terminal",
+			"zsh": "Terminal",
+			"bash": "Terminal"
+		},
+		"swap-icon-label": false
+	}
+}

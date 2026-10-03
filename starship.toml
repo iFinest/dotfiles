@@ -1,0 +1,12 @@
+format = "$directory$character"
+add_newline = false
+
+[directory]
+format = "[$path]($style)"
+style = "fg:#ffffff bg:#0dbc79"
+truncation_length = 0
+
+[character]
+success_symbol = "[](fg:#0dbc79)"
+error_symbol = "[](fg:#0dbc79)"
+

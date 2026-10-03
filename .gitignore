@@ -1,0 +1,211 @@
+# ─────────────────────────────────────
+# Runtime / cache / generated data
+# ─────────────────────────────────────
+
+**/cache/
+**/Cache/
+**/caches/
+**/cache2/
+**/logs/
+**/log/
+**/tmp/
+**/temp/
+**/state/
+**/sessions/
+**/session/
+**/runtime/
+
+# Lock files
+**/*.lock
+**/*.lockfile
+
+# Backups
+**/*.bak
+**/*.backup
+**/*.old
+**/*~
+
+# Databases / generated binary data
+**/*.db
+**/*.dbf
+**/*.dbt
+**/*.odb
+**/*.sqlite
+**/*.sqlite3
+
+# Archives / generated packages
+**/*.pack
+**/*.pmap
+
+# ─────────────────────────────────────
+# Application-specific junk
+# ─────────────────────────────────────
+
+# LibreOffice
+libreoffice/
+
+# OBS generated data
+obs-studio/logs/
+obs-studio/profiler_data/
+
+# Browser / Electron / app state
+firefox/
+chromium/
+google-chrome/
+discord/
+electron/
+BraveSoftware/
+
+# ─────────────────────────────────────
+# IDE / editor application state
+# ─────────────────────────────────────
+
+Code - OSS/
+QtProject/
+
+# VS Code / Code OSS state
+**/User/History/
+**/User/workspaceStorage/
+**/User/globalStorage/
+**/agent-host/
+**/machineid
+**/languagepacks.json
+**/chatLanguageModels.json
+
+# ─────────────────────────────────────
+# Chromium / Electron application data
+# ─────────────────────────────────────
+
+astra/
+
+# ─────────────────────────────────────
+# Discord / Equicord application data
+# ─────────────────────────────────────
+
+Equicord/
+
+# ─────────────────────────────────────
+# KDE / desktop application state
+# ─────────────────────────────────────
+
+dconf/
+baloofileinformationrc
+dolphinrc
+kdeglobals
+menus/
+mimeapps.list
+
+# ─────────────────────────────────────
+# CachyOS-specific stuff
+# ─────────────────────────────────────
+
+cachyos/
+cachyos-hello.json
+
+# ─────────────────────────────────────
+# Application state / generated configs
+# ─────────────────────────────────────
+
+gpu-screen-recorder/
+autostart/
+psd/
+swash/
+trashrc
+user-dirs.dirs
+user-dirs.locale
+
+# ─────────────────────────────────────
+# Qt / appearance state
+# ─────────────────────────────────────
+
+QtProject.conf
+
+# ─────────────────────────────────────
+# Micro bundled / generated files
+# ─────────────────────────────────────
+
+micro/colorschemes/
+
+# ─────────────────────────────────────
+# OBS generated/config state
+# ─────────────────────────────────────
+
+obs-studio/
+
+# ─────────────────────────────────────
+# Misc application configs we don't want
+# ─────────────────────────────────────
+
+qView/
+vkBasalt/
+alacritty/
+
+# Noctalia
+btop/themes/noctalia.theme
+gtk-3.0/noctalia.css
+gtk-4.0/noctalia.css
+qt5ct/colors/noctalia.conf
+qt6ct/colors/noctalia.conf
+kitty/themes/noctalia.conf
+
+# More stuff
+gtk-3.0/gtk.css
+gtk-3.0/settings.ini
+gtk-4.0/gtk.css
+qt5ct/qt6ct
+xsettingsd/
+fish/fish_variables
+systemd/user/default.target.wants/*
+systemd/user/graphical-session.target.wants/*
+
+# Clash / proxy application state
+io.github.clash-verge-rev.clash-verge-rev/
+koala-clash/
+AmneziaVPN.ORG/
+
+# Zoom state
+zoom/
+zoom.conf
+zoomus.conf
+
+# Unity generated state
+unity3d/
+
+# ─────────────────────────────────────
+# Sensitive files
+# ─────────────────────────────────────
+
+**/cookie
+**/*cookies*
+**/*credentials*
+**/*credential*
+**/*token*
+**/*tokens*
+**/*secret*
+**/*secrets*
+**/*password*
+**/*passwd*
+**/*private*
+**/*auth*
+
+# SSH / keys if they somehow end up here
+**/*.pem
+**/*.key
+
+# ─────────────────────────────────────
+# Large generated assets
+# ─────────────────────────────────────
+
+**/*.csv.gz
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.webp
+
+# ─────────────────────────────────────
+# Application-provided syntax/data
+# ─────────────────────────────────────
+
+micro/syntax/
+
+

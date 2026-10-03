@@ -1,0 +1,10 @@
+{
+	"custom/fastfetch": {
+		"format": "",
+		"min-length": 2,
+		"max-length": 2,
+		"on-click": "kitty -e bash -c 'fastfetch; read -n 1'",
+		"on-click-right": "kitty -e bash -c 'fetch; read -n 1'",
+		"tooltip": "Fastfetch"
+	}
+}

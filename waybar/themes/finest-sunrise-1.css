@@ -1,0 +1,25 @@
+/* Custom Palette */
+@define-color white        #f0f0f0;
+@define-color teal3        #007777;
+@define-color teal2        #005555;
+@define-color teal1        #003333;
+@define-color teal0        #002020;
+@define-color sunrise4     #ff9070;
+
+/* Base colors */
+@define-color text         @white;
+@define-color accent       @sunrise4;
+@define-color fg           @text;
+@define-color bg-0         @teal0;
+@define-color bg-1         @teal1;
+@define-color bg-2         @teal2;
+@define-color bg-3         @teal3;
+@define-color br           @white;
+@define-color shadow       shade(@bg-0, 0.75);
+
+/* States */
+@define-color warning      @yellow;
+@define-color critical     @red;
+@define-color charging     @green;
+@define-color hover-bg     @bg-1;
+@define-color hover-fg     alpha(@fg, 0.75);

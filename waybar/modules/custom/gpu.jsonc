@@ -1,0 +1,16 @@
+{
+	"custom/gpu": {
+		"exec": "sh -c '~/.config/waybar/scripts/gpu usage'",
+		"interval": 10,
+		"format": "󰢮 {}%",
+		"states": {
+			"warning": 75,
+			"critical": 95
+		},
+		"format-warning": "󰢮 {}%",
+		"format-critical": "󰀨 {}%",
+		"min-length": 8,
+		"max-length": 8,
+		"tooltip-format": "GPU Usage:\n{}%"
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"output": ["HDMI-A-1"],
+
+	"mode": "dock",
+	"position": "top",
+	"layer": "top",
+	"width": 0,
+	"height": 0,
+	"margin": 0,
+	"spacing": 0,
+	"reload_style_on_change": true,
+
+	"include": [
+		"~/.config/waybar/modules/custom/*.jsonc",
+		"~/.config/waybar/modules/hyprland/*.jsonc",
+		"~/.config/waybar/modules/*.jsonc"
+	],
+
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/right#bg-1",
+		"hyprland/window"
+	],
+
+	"modules-center": [],
+
+	"modules-right": [
+		"custom/mpris",
+		"custom/left#bg-1",
+		"group/pulseaudio"
+	]
+}

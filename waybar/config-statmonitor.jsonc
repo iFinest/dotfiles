@@ -1,0 +1,57 @@
+{
+	"output": ["DP-3"],
+
+	"mode": "dock",
+	"position": "top",
+	"layer": "top",
+	"width": 0,
+	"height": 0,
+	"margin": 0,
+	"spacing": 0,
+	"reload_style_on_change": true,
+
+	"include": [
+		"~/.config/waybar/modules/custom/*.jsonc",
+		"~/.config/waybar/modules/hyprland/*.jsonc",
+		"~/.config/waybar/modules/*.jsonc"
+	],
+
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/right#bg-1"
+	],
+
+	"modules-center": [
+		"custom/left#bg-1",
+		"temperature",
+
+		"custom/left#bg-2",
+		"memory",
+
+		"custom/left#bg-3",
+		"cpu",
+		"custom/left#inverse",
+
+		"custom/left#accent",
+		"clock#time",
+		"custom/right#accent",
+
+		"custom/right#inverse",
+		"custom/gpu",
+		"custom/right#bg-3",
+
+		"custom/vram",
+		"custom/right#bg-2",
+
+		"custom/gputemperature",
+		"custom/right#bg-1"
+	],
+
+	"modules-right": [
+		"custom/left#bg-1",
+		"custom/left#bg-2",
+		"custom/left#bg-3",
+		"custom/btop",
+		"custom/fastfetch"
+	]
+}

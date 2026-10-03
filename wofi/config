@@ -1,0 +1,14 @@
+# Show desktop application mode by default
+mode=drun
+
+# Window properties
+width=35%
+height=400
+location=center
+
+# Settings
+allow_images=true
+image_size=24
+hide_scroll=true
+insensitive=true
+prompt=Search Apps...

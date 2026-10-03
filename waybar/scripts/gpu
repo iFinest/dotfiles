@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+main() {
+    local option="$1"
+    case "$option" in
+        usage)
+            nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits
+            ;;
+        vram)
+            nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader,nounits |
+                awk -F ',' '{
+                    used = $1 / 1024
+                    total = $2 / 1024
+                    percentage = ($1 / $2) * 100
+                    printf "{\"text\":\"%.1fG\",\"used\":%.1f,\"total\":%.1f,\"percentage\":%.0f}\n", \
+                        used, used, total, percentage
+                }'
+            ;;
+        temperature)
+            local temperature=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits)
+            if (( temperature >= 70 )); then
+                printf '{"text":"%s","class":"critical"}\n' "$temperature"
+            else
+                printf '{"text":"%s"}\n' "$temperature"
+            fi
+            ;;
+        *)
+            printf "Usage: gpu usage|vram|temperature\n"
+            exit 1
+            ;;
+    esac
+}
+
+main "$@"

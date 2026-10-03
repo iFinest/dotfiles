@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+
+STATE_FILE="$HOME/.cache/hypr-display-control"
+
+ASUS_DISPLAY=1
+WAVESHARE_DISPLAY=2
+
+DIM_LEVEL=5
+
+get_brightness() {
+    ddcutil --display "$1" getvcp 10 |
+        awk -F '=' '{print $2}' |
+        awk -F ',' '{print $1}' |
+        xargs
+}
+
+save_brightness() {
+    local asus_brightness
+    local waveshare_brightness
+
+    asus_brightness=$(get_brightness "$ASUS_DISPLAY")
+    waveshare_brightness=$(get_brightness "$WAVESHARE_DISPLAY")
+
+    mkdir -p "$(dirname "$STATE_FILE")"
+    printf '%s %s\n' "$asus_brightness" "$waveshare_brightness" > "$STATE_FILE"
+}
+
+restore_brightness() {
+    if [[ ! -f "$STATE_FILE" ]]; then
+        return
+    fi
+
+    local asus_brightness=90
+    local waveshare_brightness=75
+
+    read -r asus_brightness waveshare_brightness < "$STATE_FILE"
+
+    ddcutil --display "$ASUS_DISPLAY" setvcp 10 "$asus_brightness"
+    ddcutil --display "$WAVESHARE_DISPLAY" setvcp 10 "$waveshare_brightness"
+
+    rm -f "$STATE_FILE"
+}
+
+dim() {
+    if [[ ! -f "$STATE_FILE" ]]; then
+        save_brightness
+    fi
+
+    ddcutil --display "$ASUS_DISPLAY" setvcp 10 "$DIM_LEVEL"
+    ddcutil --display "$WAVESHARE_DISPLAY" setvcp 10 "$DIM_LEVEL"
+}
+
+off() {
+    if [[ ! -f "$STATE_FILE" ]]; then
+        save_brightness
+    fi
+
+    dim
+
+    hyprctl dispatch 'hl.dsp.dpms({ action = "disable" })'
+}
+
+on() {
+    hyprctl dispatch 'hl.dsp.dpms({ action = "enable" })'
+
+    sleep 1
+
+    restore_brightness
+}
+
+case "$1" in
+    dim)
+        dim
+        ;;
+    off)
+        off
+        ;;
+    on)
+        on
+        ;;
+    *)
+        printf 'Usage: display-control dim|off|on\n'
+        exit 1
+        ;;
+esac

@@ -1,0 +1,12 @@
+{
+    "custom/gputemperature": {
+        "exec": "~/.config/waybar/scripts/gpu temperature",
+        "interval": 10,
+        "return-type": "json",
+        "format": "󱃃 {}°C",
+        "format-critical": "󰀦 {}°C",
+        "min-length": 8,
+        "max-length": 8,
+        "tooltip-format": "GPU Temperature:\n{}°C"
+    }
+}

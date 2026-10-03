@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+playerctl metadata --format '{{status}}|{{playerName}}|{{title}}|{{duration(position)}}' 2>/dev/null |
+    sed -E 's/\|0([0-9]:)/|\1/' |
+    awk -F '|' '{
+        icon = ($1 == "Playing") ? "󰐊" : "󰏤"
+        printf "{\"text\":\"[ %s %s ] %s \",\"tooltip\":\"%s\\n%s\"}\n", icon, $4, $3, $2, $3
+    }'

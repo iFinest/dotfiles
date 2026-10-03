@@ -1,0 +1,291 @@
+/*
+ * Ignore GTK theme
+ * https://github.com/Alexays/Waybar/issues/1351
+ */
+* { all: initial; }
+
+@import "themes/finest-sunrise-1.css";
+
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-size: 14px;
+	font-weight: 700;
+	color: @fg;
+}
+
+#waybar {
+	background-color: @shadow;
+}
+#waybar > box {
+	margin: 0;
+	background-color: @bg-0;
+}
+
+.module {
+	/* Vertically align modules */
+	margin-bottom: -1px;
+}
+
+button {
+	border-radius: 16px;
+	padding: 0 10px;
+	min-width: 16px;
+}
+button:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+tooltip {
+	border: 2px solid @br;
+	background-color: @bg-0;
+}
+tooltip > box {
+	padding: 0 6px;
+}
+
+/* Left modules */
+
+#custom-user {
+	padding: 0 8px;
+}
+
+#workspaces {
+	padding: 0 0;
+	background-color: @bg-1;
+}
+#workspaces button {
+    padding: 0 6px;
+    margin: 0;
+    min-width: 0;
+}
+#workspaces button.active label,
+#workspaces button.focused label {
+	font-size: 18.75px;
+	color: @accent;
+}
+
+/*
+ * Prevent large Unicode characters from increasing the bar height
+ * https://github.com/Alexays/Waybar/issues/2026
+ */
+#window { margin: -1px 0; }
+
+#window label {
+	padding-left: 12px;
+}
+
+/* Center modules */
+
+#custom-space {
+	padding: 0 3px;
+}
+
+#temperature {
+	background-color: @bg-1;
+}
+#temperature.critical {
+	color: @critical;
+}
+
+#memory {
+	background-color: @bg-2;
+}
+#memory.warning {
+	color: @warning;
+}
+#memory.critical {
+	color: @critical;
+}
+
+#cpu {
+	background-color: @bg-3;
+}
+#cpu.warning {
+	color: @warning;
+}
+#cpu.critical {
+	color: @critical;
+}
+
+#custom-distro {
+	font-size: 18.75px;
+	padding: 0 10px 0 5px;
+	background-color: @bg-3;
+	color: @fg;
+}
+
+#custom-gpu {
+	background-color: @bg-3;
+}
+#custom-gpu.warning {
+	color: @warning;
+}
+#custom-gpu.critical {
+	color: @critical;
+}
+
+#custom-vram {
+	background-color: @bg-2;
+}
+#custom-vram.warning {
+	color: @warning;
+}
+#custom-vram.critical {
+	color: @critical;
+}
+
+#custom-gputemperature {
+	background-color: @bg-1;
+}
+#custom-gputemperature.critical {
+	color: @critical;
+}
+
+#clock.time {
+	padding: 0 6px;
+	background-color: @accent;
+	color: @bg-0;
+}
+
+#clock.date {
+	padding-left: 6px;
+	background-color: @bg-2;
+}
+#clock.date:hover {
+	color: @hover-fg;
+}
+#custom-colorpicker {
+	padding: 0 2px 0 0;
+	background-color: @bg-2;
+}
+
+#network {
+	padding: 0 6px 0 4px;
+	background-color: @bg-1;
+}
+#network:hover {
+	color: @hover-fg;
+}
+#bluetooth {
+	padding: 0 4px;
+	background-color: @bg-1;
+}
+#bluetooth:hover {
+	color: @hover-fg;
+}
+
+#custom-btop {
+	padding: 0;
+	background-color: @bg-3;
+}
+
+#custom-fastfetch {
+	padding: 0;
+	background-color: @bg-3;
+}
+
+#custom-update {
+	padding: 0 2px 0 0;
+	background-color: @bg-3;
+}
+#custom-update:hover {
+	color: @hover-fg;
+}
+
+/* Right modules */
+
+#mpris {
+	padding: 0 12px;
+}
+#mpris:hover,
+#mpris.paused {
+	color: @hover-fg;
+}
+
+#pulseaudio,
+#wireplumber {
+	background-color: @bg-1;
+}
+#pulseaudio:hover,
+#pulseaudio.output.muted,
+#pulseaudio.input.source-muted,
+#wireplumber:hover,
+#wireplumber.muted {
+	color: @hover-fg;
+}
+
+#backlight {
+	background-color: @bg-2;
+}
+
+#battery {
+	background-color: @bg-3;
+}
+#battery.warning {
+	color: @warning;
+}
+#battery.critical {
+	color: @critical;
+}
+#battery.charging {
+	color: @charging;
+}
+
+#idle_inhibitor {
+	padding: 0;
+	background-color: @bg-0;
+	color: @accent;
+}
+#idle_inhibitor.deactivated {
+	background-color: @bg-0;
+	color: @fg;
+}
+#idle_inhibitor:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+#custom-power {
+	font-size: 16px;
+	padding: 0 8px 0 8px;
+	color: @fg;
+}
+#custom-power:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+/* Dividers */
+
+#custom-left,
+#custom-right {
+	font-size: 19.5px;
+}
+
+#custom-left.accent,
+#custom-right.accent {
+	color: @accent;
+}
+
+#custom-left.bg-1,
+#custom-right.bg-1 {
+	color: @bg-1;
+}
+
+#custom-left.bg-2,
+#custom-right.bg-2 {
+	background-color: @bg-1;
+	color: @bg-2;
+}
+
+#custom-left.bg-3,
+#custom-right.bg-3 {
+	background-color: @bg-2;
+	color: @bg-3;
+}
+
+#custom-left.inverse,
+#custom-right.inverse {
+	color: @bg-3;
+}
