@@ -1,0 +1,15 @@
+[Unit]
+Description=EasyEffects Audio Service
+Wants=pipewire-pulse.service
+After=pipewire-pulse.service
+BindsTo=pipewire-pulse.service
+PartOf=pipewire-pulse.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/easyeffects --gapplication-service
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
+

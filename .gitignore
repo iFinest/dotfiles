@@ -163,6 +163,9 @@ io.github.clash-verge-rev.clash-verge-rev/
 koala-clash/
 AmneziaVPN.ORG/
 
+# Neovim theme
+nvim/colors/
+
 # Zoom state
 zoom/
 zoom.conf

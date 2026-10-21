@@ -1,0 +1,131 @@
+2026-10-13T17:34:42 exception: Failed to open "/home/finest/.config/mpd/state": No such file or directory
+2026-10-13T17:34:42 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:34:42 exception: inotify_add_watch("/mnt/satassd/Music/*") failed: No such file or directory
+2026-10-13T17:35:03 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:35:06 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:35:06 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:35:06 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:35:06 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:35:06 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:35:14 exception: Failed to access /mnt/satassd/Music/*: No such file or directory
+2026-10-13T17:36:10 update: added combinedplaylist/Eurobeat mix for fast driving.mp3
+2026-10-13T17:36:10 update: added combinedplaylist/Pitbull Mashup.mp3
+2026-10-13T17:36:10 update: added nightcore/Industry Baby sped up.mp3
+2026-10-13T17:36:10 update: added nightcore/doja cat - say so (sped up).mp3
+2026-10-13T17:36:10 update: added nightcore/Nightcore - Rockefeller Street.mp3
+2026-10-13T17:36:10 update: added nightcore/Just dance (sped up).mp3
+2026-10-13T17:36:10 update: added nightcore/dancin [sped up].mp3
+2026-10-13T17:36:10 update: added nightcore/Syko - BrooklynBloodPop Slowed.mp3
+2026-10-13T17:36:10 update: added nightcore/last friday night sped up.mp3
+2026-10-13T17:36:10 update: added nightcore/Bang Bang - KNAAN ft Adam levine sped up.mp3
+2026-10-13T17:36:10 update: added nightcore/Nightcore - Bad boy.mp3
+2026-10-13T17:36:10 update: added nightcore/Nightcore - Call the doctor.mp3
+2026-10-13T17:36:10 update: added nightcore/OneRepublic - Counting Stars sped up.mp3
+2026-10-13T17:36:10 update: added nightcore/John Cena - Cupid (Twin Version) (sped up).mp3
+2026-10-13T17:36:10 update: added nightcore/Safe And Sound (sped up).mp3
+2026-10-13T17:36:10 update: added nightcore/Rebzyyx - all i want is you.mp3
+2026-10-13T17:36:10 update: added nightcore/my ordinary life (sped up reverb).mp3
+2026-10-13T17:36:10 update: added nightcore/One kiss - sped up.mp3
+2026-10-13T17:36:10 update: added nightcore/pupsies - misery.mp3
+2026-10-13T17:36:10 update: added nightcore/Rock With You sped up.mp3
+2026-10-13T17:36:10 update: added nightcore/Pathetic-Society_Remix.mp3
+2026-10-13T17:36:10 update: added phonk/BONKERS.mp3
+2026-10-13T17:36:10 update: added phonk/Close Eyes.mp3
+2026-10-13T17:36:10 update: added phonk/FORGOTTENAGE - END OF THE WORLD.mp3
+2026-10-13T17:36:10 update: added phonk/KSLV - Chase.mp3
+2026-10-13T17:36:10 update: added phonk/KSLV - Override.mp3
+2026-10-13T17:36:10 update: added phonk/L.P. Rhythm - Versatile Hardstyle Remix.mp3
+2026-10-13T17:36:10 update: added phonk/Nissan Playa - mistake.mp3
+2026-10-13T17:36:10 update: added phonk/PLAYAMANE x Nateki - MIDNIGHT.mp3
+2026-10-13T17:36:10 update: added phonk/Portwave - Shadow Lady Phonk Remix.mp3
+2026-10-13T17:36:10 update: added phonk/shirtokiya - DISASTER.mp3
+2026-10-13T17:36:10 update: added phonk/Yvetzal - Feedback.mp3
+2026-10-13T17:36:10 update: added random/The CSGO bhop song.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki x nosgov - party addict (mv).mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki x asteria - gohard.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - THROW IT!.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - get ya money.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki x 6arelyhuman x asteria - feeling nothing.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - sippin' drank.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki x nosgov - spendin' bandzzz.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - overdose crescent w d3r.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - pls stop acting like u care nomark (pröz).mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - reject.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - I KNOW YOU WANT IT.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - limits.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki x clover - Pretty Scene Girl Remix ft. d3r.mp3
+2026-10-13T17:36:10 update: added stylecore/kets4eki - traumatized (pröz).mp3
+2026-10-13T17:36:10 update: added undertaledeltarune/Asgore.mp3
+2026-10-13T17:36:10 update: added undertaledeltarune/Bonetrousle.mp3
+2026-10-13T17:36:10 update: added undertaledeltarune/Attack of the Killer Queen.mp3
+2026-10-13T17:36:10 update: added undertaledeltarune/MEGALOVANIA.mp3
+2026-10-13T17:48:41 update: added combinedplaylist/Eurobeat mix for fast driving.mp3
+2026-10-13T17:48:41 update: added combinedplaylist/Pitbull Mashup.mp3
+2026-10-13T17:48:41 update: added nightcore/Industry Baby sped up.mp3
+2026-10-13T17:48:41 update: added nightcore/doja cat - say so (sped up).mp3
+2026-10-13T17:48:41 update: added nightcore/Nightcore - Rockefeller Street.mp3
+2026-10-13T17:48:41 update: added nightcore/Just dance (sped up).mp3
+2026-10-13T17:48:41 update: added nightcore/dancin [sped up].mp3
+2026-10-13T17:48:41 update: added nightcore/Syko - BrooklynBloodPop Slowed.mp3
+2026-10-13T17:48:41 update: added nightcore/last friday night sped up.mp3
+2026-10-13T17:48:41 update: added nightcore/Bang Bang - KNAAN ft Adam levine sped up.mp3
+2026-10-13T17:48:41 update: added nightcore/Nightcore - Bad boy.mp3
+2026-10-13T17:48:41 update: added nightcore/Nightcore - Call the doctor.mp3
+2026-10-13T17:48:41 update: added nightcore/OneRepublic - Counting Stars sped up.mp3
+2026-10-13T17:48:41 update: added nightcore/John Cena - Cupid (Twin Version) (sped up).mp3
+2026-10-13T17:48:41 update: added nightcore/Safe And Sound (sped up).mp3
+2026-10-13T17:48:41 update: added nightcore/Rebzyyx - all i want is you.mp3
+2026-10-13T17:48:41 update: added nightcore/my ordinary life (sped up reverb).mp3
+2026-10-13T17:48:41 update: added nightcore/One kiss - sped up.mp3
+2026-10-13T17:48:41 update: added nightcore/pupsies - misery.mp3
+2026-10-13T17:48:41 update: added nightcore/Rock With You sped up.mp3
+2026-10-13T17:48:41 update: added nightcore/Pathetic-Society_Remix.mp3
+2026-10-13T17:48:41 update: added phonk/BONKERS.mp3
+2026-10-13T17:48:41 update: added phonk/Close Eyes.mp3
+2026-10-13T17:48:41 update: added phonk/FORGOTTENAGE - END OF THE WORLD.mp3
+2026-10-13T17:48:41 update: added phonk/KSLV - Chase.mp3
+2026-10-13T17:48:41 update: added phonk/KSLV - Override.mp3
+2026-10-13T17:48:41 update: added phonk/L.P. Rhythm - Versatile Hardstyle Remix.mp3
+2026-10-13T17:48:41 update: added phonk/Nissan Playa - mistake.mp3
+2026-10-13T17:48:41 update: added phonk/PLAYAMANE x Nateki - MIDNIGHT.mp3
+2026-10-13T17:48:41 update: added phonk/Portwave - Shadow Lady Phonk Remix.mp3
+2026-10-13T17:48:41 update: added phonk/shirtokiya - DISASTER.mp3
+2026-10-13T17:48:41 update: added phonk/Yvetzal - Feedback.mp3
+2026-10-13T17:48:41 update: added random/The CSGO bhop song.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki x nosgov - party addict (mv).mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki x asteria - gohard.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - THROW IT!.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - get ya money.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki x 6arelyhuman x asteria - feeling nothing.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - sippin' drank.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki x nosgov - spendin' bandzzz.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - overdose crescent w d3r.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - pls stop acting like u care nomark (pröz).mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - reject.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - I KNOW YOU WANT IT.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - limits.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki x clover - Pretty Scene Girl Remix ft. d3r.mp3
+2026-10-13T17:48:41 update: added stylecore/kets4eki - traumatized (pröz).mp3
+2026-10-13T17:48:41 update: added undertaledeltarune/Asgore.mp3
+2026-10-13T17:48:41 update: added undertaledeltarune/Bonetrousle.mp3
+2026-10-13T17:48:41 update: added undertaledeltarune/Attack of the Killer Queen.mp3
+2026-10-13T17:48:41 update: added undertaledeltarune/MEGALOVANIA.mp3
+2026-10-13T17:50:40 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:49 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:49 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:49 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:49 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:50 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:50 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:50 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:50 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:51 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:51 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:52 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:51:52 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:52:03 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:52:04 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:52:04 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:52:04 exception: Failed to open /home/finest/.config/mpd/playlists: No such file or directory
+2026-10-13T17:52:07 exception: Failed to open audio output
+2026-10-13T17:56:32 player: played "nightcore/Pathetic-Society_Remix.mp3"

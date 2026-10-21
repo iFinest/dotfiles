@@ -1,10 +1,13 @@
 /* Custom Palette */
 @define-color white        #f0f0f0;
-@define-color teal3        #007777;
-@define-color teal2        #005555;
-@define-color teal1        #003333;
-@define-color teal0        #002020;
-@define-color sunrise4     #ff9070;
+@define-color teal3        #1c5157;
+@define-color teal2        #154247;
+@define-color teal1        #103337;
+@define-color teal0        #0d272d;
+@define-color sunrise4     #eda79a;
+@define-color calm-red     #e07a7a;
+@define-color calm-yellow  #e5c07b;
+@define-color calm-green   #88b090;
 
 /* Base colors */
 @define-color text         @white;
@@ -18,8 +21,9 @@
 @define-color shadow       shade(@bg-0, 0.75);
 
 /* States */
-@define-color warning      @yellow;
-@define-color critical     @red;
-@define-color charging     @green;
+@define-color warning      @calm-yellow;
+@define-color critical     @calm-red;
+@define-color charging     @calm-green;
 @define-color hover-bg     @bg-1;
 @define-color hover-fg     alpha(@fg, 0.75);
+
