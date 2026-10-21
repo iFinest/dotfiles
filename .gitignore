@@ -136,6 +136,12 @@ obs-studio/
 # Misc application configs we don't want
 # ─────────────────────────────────────
 
+# GIMP
+GIMP/
+
+# Go telemetry
+go/telemetry/
+
 qView/
 vkBasalt/
 alacritty/
