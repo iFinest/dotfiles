@@ -7,7 +7,7 @@
 @import "themes/finest-sunrise-1.css";
 
 * {
-	font-family: "JetBrainsMono Nerd Font";
+	font-family: "JetBrains Mono";
 	font-size: 14px;
 	font-weight: 700;
 	color: @fg;

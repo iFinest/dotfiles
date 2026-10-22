@@ -50,6 +50,7 @@ obs-studio/profiler_data/
 
 # Browser / Electron / app state
 firefox/
+librewolf/
 chromium/
 google-chrome/
 discord/
@@ -73,16 +74,13 @@ QtProject/
 **/chatLanguageModels.json
 
 # ─────────────────────────────────────
-# Chromium / Electron application data
-# ─────────────────────────────────────
-
-astra/
-
-# ─────────────────────────────────────
 # Discord / Equicord application data
 # ─────────────────────────────────────
 
+Discord/
 Equicord/
+Equibop/
+equibop/
 
 # ─────────────────────────────────────
 # KDE / desktop application state
@@ -114,29 +112,20 @@ trashrc
 user-dirs.dirs
 user-dirs.locale
 
-# ─────────────────────────────────────
 # Qt / appearance state
-# ─────────────────────────────────────
 
 QtProject.conf
 
-# ─────────────────────────────────────
 # Micro bundled / generated files
-# ─────────────────────────────────────
 
 micro/colorschemes/
 
-# ─────────────────────────────────────
 # OBS generated/config state
-# ─────────────────────────────────────
 
 obs-studio/
 
-# ─────────────────────────────────────
 # Misc application configs we don't want
-# ─────────────────────────────────────
 
-# GIMP
 GIMP/
 
 # Go telemetry
@@ -164,11 +153,6 @@ fish/fish_variables
 systemd/user/default.target.wants/*
 systemd/user/graphical-session.target.wants/*
 
-# Clash / proxy application state
-io.github.clash-verge-rev.clash-verge-rev/
-koala-clash/
-AmneziaVPN.ORG/
-
 # Neovim theme
 nvim/colors/
 
@@ -180,9 +164,7 @@ zoomus.conf
 # Unity generated state
 unity3d/
 
-# ─────────────────────────────────────
 # Sensitive files
-# ─────────────────────────────────────
 
 **/cookie
 **/*cookies*
@@ -201,9 +183,7 @@ unity3d/
 **/*.pem
 **/*.key
 
-# ─────────────────────────────────────
 # Large generated assets
-# ─────────────────────────────────────
 
 **/*.csv.gz
 **/*.png
@@ -211,10 +191,7 @@ unity3d/
 **/*.jpeg
 **/*.webp
 
-# ─────────────────────────────────────
 # Application-provided syntax/data
-# ─────────────────────────────────────
 
 micro/syntax/
-
 
