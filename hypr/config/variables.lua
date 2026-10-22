@@ -1,7 +1,7 @@
 -- Hyprland default apps
 TERMINAL        = "kitty"
 FILE_MANAGER    = "dolphin"
-BROWSER         = "brave-browser-beta"
+BROWSER         = "librewolf"
 EDITOR          = "gnome-text-editor --new-window"
 CALCULATOR      = "gnome-calculator"
 
