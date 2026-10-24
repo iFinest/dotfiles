@@ -1,7 +1,6 @@
 [soe][Compressor#0]
 attack=40
 knee=-8
-makeup=3
-ratio=1.5
+ratio=2
 release=200
-threshold=-15
+threshold=-14

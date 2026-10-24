@@ -12,6 +12,5 @@ visiblePage=pluginsPage
 visiblePlugin=compressor#0
 
 [Window]
-height=1039
-visiblePage=inputPage
-width=948
+height=1047
+width=952

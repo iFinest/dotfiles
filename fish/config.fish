@@ -1,11 +1,12 @@
 function fish_greeting
     pfetch
 end
-function fish_prompt
-    printf '%s ' (prompt_pwd)
-end
 
 set -gx EDITOR nvim
 set -gx SUDO_EDITOR nvim
 
-starship init fish | source
+if status is-interactive
+    if set -q KITTY_WINDOW_ID
+        #  starship init fish | source
+    end
+end

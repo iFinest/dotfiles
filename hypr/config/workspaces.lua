@@ -5,47 +5,34 @@
 
 -- 1
 hl.workspace_rule({
-    workspace = "1",
-    monitor = MONITOR1,
-    persistent = true,
-    layout = "scrolling"
+	workspace = "1",
+	monitor = MONITOR1,
+	persistent = true,
+	layout = "scrolling",
 })
 -- Named
 hl.workspace_rule({
-    workspace = "name:msg",
-    monitor = MONITOR2,
-    default = true,
-    persistent = true,
-    layout = "scrolling"
+	workspace = "name:msg",
+	monitor = MONITOR2,
+	default = true,
+	persistent = true,
+	layout = "scrolling",
 })
 hl.workspace_rule({
-    workspace = "name:steam",
-    monitor = MONITOR1,
-    default = true,
-    gaps_in = 0,
-    gaps_out = 0
+	workspace = "name:gaming",
+	monitor = MONITOR1,
+	default = true,
+	gaps_in = 0,
+	gaps_out = 0,
 })
 hl.workspace_rule({
-    workspace = "name:mc",
-    monitor = MONITOR1,
-    default = true,
-    gaps_in = 0,
-    gaps_out = 0
-})
-hl.workspace_rule({
-    workspace = "name:rbx",
-    monitor = MONITOR1,
-    gaps_in = 0,
-    gaps_out = 0
-})
-hl.workspace_rule({
-    workspace = "name:stat",
-    monitor = MONITOR3,
-    default = true
+	workspace = "name:stat",
+	monitor = MONITOR3,
+	default = true,
 })
 -- Special
 hl.workspace_rule({
-    workspace = "special:term"
+	workspace = "special:term",
 })
 
 -- Effects

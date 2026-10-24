@@ -1,12 +1,39 @@
-format = "$directory$character"
+format = """
+$time\
+$status\
+$directory\
+$character"""
+
 add_newline = false
 
+[time]
+disabled = false
+format = "[ $time ](fg:#ffffff bg:#303030)"
+time_format = "%H:%M:%S"
+style = "fg:#ffffff bg:#303030"
+
+[status]
+disabled = false
+format = "[](fg:#303030 bg:#454545)[ $status ](fg:#ffffff bg:#454545)[](fg:#454545 bg:#0dbc79)"
+success_style = "fg:#303030 bg:#0dbc79"
+success_symbol = ""
+recognize_signal_code = true
+symbol = ""
+not_executable_symbol = ""
+not_found_symbol = ""
+sigint_symbol = ""
+signal_symbol = ""
+pipestatus = false
+
 [directory]
-format = "[$path]($style)"
+format = "[ $path ]($style)"
 style = "fg:#ffffff bg:#0dbc79"
 truncation_length = 0
 
 [character]
 success_symbol = "[](fg:#0dbc79)"
 error_symbol = "[](fg:#0dbc79)"
-
+vimcmd_symbol = "[](fg:#0dbc79)"
+vimcmd_replace_one_symbol = "[](fg:#0dbc79)"
+vimcmd_replace_symbol = "[](fg:#0dbc79)"
+vimcmd_visual_symbol = "[](fg:#0dbc79)"
