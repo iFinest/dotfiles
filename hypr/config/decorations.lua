@@ -31,7 +31,7 @@ hl.config({
 			new_optimizations = true,
 			ignore_opacity = true,
 			popups = true,
-			special = true,
+			special = false,
 		},
 	},
 })
