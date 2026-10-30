@@ -1,0 +1,11 @@
+{
+  "FFlagDebugDisableMeshLOD": "True",
+  "DFIntCSGLevelOfDetailSwitchingDistance": "9999",
+  "DFIntCSGLevelOfDetailSwitchingDistanceL12": "9999",
+  "DFIntCSGLevelOfDetailSwitchingDistanceL23": "9999",
+  "DFIntCSGLevelOfDetailSwitchingDistanceL34": "9999",
+  "FIntMeshShadowLODPercent": "0",
+  "FFlagRenderWarmUpInCS": "False",
+  "FIntMeshPartInplaceUploadPreallocMib": "256"
+}
+

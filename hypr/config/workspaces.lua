@@ -22,6 +22,7 @@ hl.workspace_rule({
 	workspace = "name:gaming",
 	monitor = MONITOR1,
 	default = true,
+	layout = "monocle",
 	gaps_in = 0,
 	gaps_out = 0,
 })

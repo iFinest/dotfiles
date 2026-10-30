@@ -24,7 +24,7 @@ hl.bind(mainMod .. " + Left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + Right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + Up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + Down", hl.dsp.focus({ direction = "down" }))
-hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
+hl.bind("ALT + Tab", hl.dsp.layout("cyclenext"))
 
 -- Move & Resize with mouse
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
