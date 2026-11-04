@@ -33,6 +33,7 @@ hl.window_rule({
 	workspace = gamingWorkspace,
 })
 hl.window_rule({
+	"windowdance",
 	match = {
 		class = gamingApps,
 		title = "^(.+)$",
@@ -46,14 +47,22 @@ hl.window_rule({
 })
 hl.window_rule({
 	match = {
+		class = "^Roblox*$",
+	},
+	center = true,
+	decorate = false,
+	float = true,
+	fullscreen = false,
+	fullscreen_state = 0,
+})
+hl.window_rule({
+	match = {
 		class = "^(steam_app.*)$",
 		initial_title = "^$",
 	},
 	center = true,
-	float = true,
 	fullscreen = false,
 	fullscreen_state = 0,
-	workspace = gamingWorkspace,
 })
 hl.window_rule({
 	match = { class = "^steam_app_3664820$" }, -- Sandboxels Steam AppID

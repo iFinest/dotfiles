@@ -18,7 +18,7 @@ hl.config({
 	decoration = {
 		dim_special = 0.2,
 		rounding = 0,
-		active_opacity = 0.9,
+		active_opacity = 1,
 		inactive_opacity = 0.8,
 		fullscreen_opacity = 1,
 		blur = {
@@ -31,7 +31,7 @@ hl.config({
 			new_optimizations = true,
 			ignore_opacity = true,
 			popups = true,
-			special = false,
+			special = true,
 		},
 	},
 })

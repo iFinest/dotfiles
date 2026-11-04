@@ -1,7 +1,7 @@
 # Connection Specs
 mpd_host = "127.0.0.1"
 mpd_port = "6600"
-mpd_music_dir = "~/Music"
+mpd_music_dir = "/satassd/media/Music"
 
 # Visualizer Settings (Btop Style Graphs)
 visualizer_data_source = "/tmp/mpd.fifo"
@@ -18,11 +18,4 @@ statusbar_visibility = "yes"
 titles_visibility = "no"
 enable_window_title = "yes"
 progressbar_look = "─⊙─"
-
-# Colors for that Terminal Monitor Aesthetic
-colors_enabled = "yes"
-main_window_color = "cyan"
-header_window_color = "blue"
-progressbar_color = "black"
-statusbar_color = "magenta"
 

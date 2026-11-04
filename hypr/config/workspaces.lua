@@ -3,14 +3,17 @@
 
 -- layout: string = {dwindle | master | monocle | scrolling}
 
--- 1
+-- Named
 hl.workspace_rule({
-	workspace = "1",
+	workspace = "name:web",
 	monitor = MONITOR1,
-	persistent = true,
 	layout = "scrolling",
 })
--- Named
+hl.workspace_rule({
+	workspace = "name:coding",
+	monitor = MONITOR1,
+	layout = "scrolling",
+})
 hl.workspace_rule({
 	workspace = "name:msg",
 	monitor = MONITOR2,
@@ -34,6 +37,12 @@ hl.workspace_rule({
 -- Special
 hl.workspace_rule({
 	workspace = "special:term",
+})
+hl.workspace_rule({
+	workspace = "special:music",
+})
+hl.workspace_rule({
+	workspace = "special:vid",
 })
 
 -- Effects

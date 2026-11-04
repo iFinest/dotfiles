@@ -1,0 +1,187 @@
+{
+  "format": 2,
+  "categories": {
+    "Teams": {
+      "groups": {
+        "Teams": {
+          "expanded": true,
+          "options": {
+            "Teams": {
+              "value": []
+            }
+          }
+        }
+      }
+    },
+    "Appearance": {
+      "groups": {
+        "General": {
+          "expanded": true,
+          "options": {
+            "Style": "MODERN",
+            "Light Mode": true,
+            "UI Scale": 100,
+            "Scroll Smoothness": 150,
+            "Text Box Focus Ring": false
+          }
+        },
+        "Notifications": {
+          "expanded": true,
+          "options": {
+            "Corner": "TOP_RIGHT",
+            "Blur": 100,
+            "Time On Screen": 100,
+            "Notify For New Updates": true
+          }
+        },
+        "Tint": {
+          "expanded": true,
+          "options": {
+            "Light Panel": {
+              "r": 243,
+              "g": 238,
+              "b": 235,
+              "a": 255,
+              "value": -790805,
+              "hue": 0.0625,
+              "saturation": 0.03292181,
+              "brightness": 0.9529412,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Light Side Panels": {
+              "r": 50,
+              "g": 38,
+              "b": 30,
+              "a": 255,
+              "value": -13490658,
+              "hue": 0.06666666,
+              "saturation": 0.4,
+              "brightness": 0.19607843,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Light Tab Bar": {
+              "r": 50,
+              "g": 38,
+              "b": 30,
+              "a": 255,
+              "value": -13490658,
+              "hue": 0.06666666,
+              "saturation": 0.4,
+              "brightness": 0.19607843,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Light Notifications": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 255,
+              "value": -1,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "brightness": 1.0,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Dark Panel": {
+              "r": 89,
+              "g": 89,
+              "b": 89,
+              "a": 255,
+              "value": -10921639,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "brightness": 0.34901962,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Dark Side Panels": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 255,
+              "value": -1,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "brightness": 1.0,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Dark Tab Bar": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 255,
+              "value": -1,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "brightness": 1.0,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            },
+            "Dark Notifications": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 255,
+              "value": -1,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "brightness": 1.0,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            }
+          }
+        },
+        "Accent": {
+          "expanded": true,
+          "options": {
+            "Accent Colour": {
+              "r": 0,
+              "g": 145,
+              "b": 255,
+              "a": 255,
+              "value": -16739841,
+              "hue": 0.5718954,
+              "saturation": 1.0,
+              "brightness": 1.0,
+              "rainbow": false,
+              "rainbowSpeed": 5,
+              "pulse": false,
+              "pulseSpeed": 5
+            }
+          }
+        },
+        "Blur": {
+          "expanded": true,
+          "options": {
+            "Background": 200,
+            "Side Panels": 100,
+            "Tab Bar": 100,
+            "Popovers": 300,
+            "Controls": 100,
+            "Notifications": 100
+          }
+        }
+      }
+    }
+  }
+}

@@ -58,7 +58,11 @@ hl.bind(mainMod .. " + CONTROL + G", hl.dsp.window.move({ workspace = "name:gami
 hl.bind(mainMod .. " + CONTROL + K", hl.dsp.window.move({ workspace = "name:stat" }))
 
 hl.bind(mainMod .. " + T", hl.dsp.workspace.toggle_special("term"))
+hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))
+hl.bind(mainMod .. " + V", hl.dsp.workspace.toggle_special("vid"))
 hl.bind(mainMod .. " + CONTROL + T", hl.dsp.window.move({ workspace = "special:term" }))
+hl.bind(mainMod .. " + CONTROL + M", hl.dsp.window.move({ workspace = "special:music" }))
+hl.bind(mainMod .. " + CONTROL + V", hl.dsp.window.move({ workspace = "special:vid" }))
 
 -- Scrolling
 hl.bind(mainMod .. " + mouse_down", hl.dsp.layout("move +col"))
