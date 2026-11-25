@@ -49,20 +49,24 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + " .. digitCode(key), hl.dsp.focus({ workspace = i }))
 	hl.bind(mainMod .. " + CONTROL + " .. digitCode(key), hl.dsp.window.move({ workspace = i }))
 end
--- Special Workspaces
+-- Named and Special Workspaces
+hl.bind(mainMod .. " + Z", hl.dsp.focus({ workspace = "name:web" }))
+hl.bind(mainMod .. " + C", hl.dsp.focus({ workspace = "name:coding" }))
 hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "name:msg" }))
 hl.bind(mainMod .. " + G", hl.dsp.focus({ workspace = "name:gaming" }))
 hl.bind(mainMod .. " + K", hl.dsp.focus({ workspace = "name:stat" }))
+hl.bind(mainMod .. " + CONTROL + Z", hl.dsp.window.move({ workspace = "name:web" }))
+hl.bind(mainMod .. " + CONTROL + C", hl.dsp.window.move({ workspace = "name:coding" }))
 hl.bind(mainMod .. " + CONTROL + S", hl.dsp.window.move({ workspace = "name:msg" }))
 hl.bind(mainMod .. " + CONTROL + G", hl.dsp.window.move({ workspace = "name:gaming" }))
 hl.bind(mainMod .. " + CONTROL + K", hl.dsp.window.move({ workspace = "name:stat" }))
 
 hl.bind(mainMod .. " + T", hl.dsp.workspace.toggle_special("term"))
 hl.bind(mainMod .. " + M", hl.dsp.workspace.toggle_special("music"))
-hl.bind(mainMod .. " + V", hl.dsp.workspace.toggle_special("vid"))
+hl.bind(mainMod .. " + V", hl.dsp.workspace.toggle_special("msgoverlay"))
 hl.bind(mainMod .. " + CONTROL + T", hl.dsp.window.move({ workspace = "special:term" }))
 hl.bind(mainMod .. " + CONTROL + M", hl.dsp.window.move({ workspace = "special:music" }))
-hl.bind(mainMod .. " + CONTROL + V", hl.dsp.window.move({ workspace = "special:vid" }))
+hl.bind(mainMod .. " + CONTROL + V", hl.dsp.window.move({ workspace = "special:msgoverlay" }))
 
 -- Scrolling
 hl.bind(mainMod .. " + mouse_down", hl.dsp.layout("move +col"))

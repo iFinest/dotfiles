@@ -25,14 +25,15 @@ hl.workspace_rule({
 	workspace = "name:gaming",
 	monitor = MONITOR1,
 	default = true,
-	layout = "monocle",
 	gaps_in = 0,
 	gaps_out = 0,
+	layout = "monocle",
 })
 hl.workspace_rule({
 	workspace = "name:stat",
 	monitor = MONITOR3,
 	default = true,
+	persistent = true,
 })
 -- Special
 hl.workspace_rule({
@@ -42,7 +43,7 @@ hl.workspace_rule({
 	workspace = "special:music",
 })
 hl.workspace_rule({
-	workspace = "special:vid",
+	workspace = "special:msgoverlay",
 })
 
 -- Effects

@@ -10,39 +10,39 @@
 # License: MIT
 
 main() {
-	local list=(
-		"Lock"
-		"Logout"
-		"Suspend"
-		"Hibernate"
-		"Reboot"
-		"Shutdown"
-		"Exit"
-	)
+    local list=(
+        "Lock"
+        "Logout"
+        "Suspend"
+        "Hibernate"
+        "Reboot"
+        "Shutdown"
+        "Exit"
+    )
 
-	local opts=(
-		--border-label=" Power Menu "
-		--border="sharp"
-		--cycle
-		--ghost="Search"
-		--highlight-line
-		--info="inline-right"
-		--reverse
-	)
+    local opts=(
+        --border-label=" Power Menu "
+        --border="sharp"
+        --cycle
+        --ghost="Search"
+        --highlight-line
+        --info="inline-right"
+        --reverse
+    )
 
-	local selected
-	selected=$(printf "%s\n" "${list[@]}" | fzf "${opts[@]}")
+    local selected
+    selected=$(printf "%s\n" "${list[@]}" | fzf "${opts[@]}")
 
-	case $selected in
-		Lock)      loginctl  lock-session ;;
-		Logout)    loginctl  terminate-session "$XDG_SESSION_ID" ;;
-		Suspend)   systemctl suspend ;;
-		Hibernate) systemctl hibernate ;;
-		Reboot)    systemctl reboot ;;
-		Shutdown)  systemctl poweroff ;;
-		Exit)      return 0 ;;
-		*)         return 1 ;;
-	esac
+    case $selected in
+    Lock) loginctl lock-session ;;
+    Logout) loginctl terminate-session "$XDG_SESSION_ID" ;;
+    Suspend) systemctl suspend ;;
+    Hibernate) systemctl hibernate ;;
+    Reboot) systemctl reboot ;;
+    Shutdown) systemctl poweroff ;;
+    Exit) return 0 ;;
+    *) return 1 ;;
+    esac
 }
 
 main

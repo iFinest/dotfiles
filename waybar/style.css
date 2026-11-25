@@ -7,9 +7,9 @@
 @import "themes/finest-sunrise-1.css";
 
 * {
-	font-family: "JetBrains Mono";
-	font-size: 14px;
-	font-weight: 700;
+	font-family: "Iosevka";
+	font-size: 16px;
+	font-weight: 400;
 	color: @fg;
 }
 
@@ -37,11 +37,11 @@ button:hover {
 }
 
 tooltip {
-	border: 2px solid @br;
+	border: 0;
 	background-color: @bg-0;
 }
 tooltip > box {
-	padding: 0 6px;
+	padding: 0 2px;
 }
 
 /* Left modules */
@@ -55,14 +55,18 @@ tooltip > box {
 	background-color: @bg-1;
 }
 #workspaces button {
-    padding: 0 6px;
+    padding: 0 2px;
     margin: 0;
     min-width: 0;
 }
-#workspaces button.active label,
 #workspaces button.focused label {
-	font-size: 18.75px;
 	color: @accent;
+}
+
+#mode {
+    background-color: @bg-2;
+    color: @accent;
+    padding: 0 2px;
 }
 
 /*
@@ -72,13 +76,13 @@ tooltip > box {
 #window { margin: -1px 0; }
 
 #window label {
-	padding-left: 12px;
+	padding-left: 2px;
 }
 
 /* Center modules */
 
 #custom-space {
-	padding: 0 3px;
+	padding: 0 2px;
 }
 
 #temperature {
@@ -143,47 +147,60 @@ tooltip > box {
 }
 
 #clock.time {
-	padding: 0 6px;
-	background-color: @accent;
-	color: @bg-0;
+	padding: 0 2px;
+	background-color: @bg-0;
+	color: @text;
 }
 
 #clock.date {
-	padding-left: 6px;
+	padding-left: 2px;
 	background-color: @bg-2;
 }
 #clock.date:hover {
 	color: @hover-fg;
 }
 #custom-colorpicker {
-	padding: 0 2px 0 0;
+	padding: 0 2px;
 	background-color: @bg-2;
 }
 
 #network {
-	padding: 0 6px 0 4px;
+	padding: 0 2px;
 	background-color: @bg-1;
 }
 #network:hover {
 	color: @hover-fg;
 }
 #bluetooth {
-	padding: 0 4px;
+	padding: 0 2px;
 	background-color: @bg-1;
 }
 #bluetooth:hover {
 	color: @hover-fg;
 }
 
-#custom-btop {
-	padding: 0;
-	background-color: @bg-3;
+
+#tray {
+    padding: 0 2px;
+    background-color: @bg-2;
 }
 
-#custom-fastfetch {
-	padding: 0;
-	background-color: @bg-3;
+#tray widget {
+    padding: 0;
+    margin: 0;
 }
+
+#custom-expand-icon {
+    color: #ffffff;
+    background-color: @bg-2;
+    padding: 0 2px;
+    font-size: 14px;
+}
+
+.tray-group-item {
+    padding: 0 2px;
+}
+
 
 #custom-update {
 	padding: 0 2px 0 0;
@@ -193,10 +210,8 @@ tooltip > box {
 	color: @hover-fg;
 }
 
-/* Right modules */
-
 #mpris {
-	padding: 0 12px;
+	padding: 0 2px;
 }
 #mpris:hover,
 #mpris.paused {
@@ -233,7 +248,8 @@ tooltip > box {
 }
 
 #idle_inhibitor {
-	padding: 0;
+    font-size: 16px;
+	padding: 0 2px 0 0px;
 	background-color: @bg-0;
 	color: @accent;
 }
@@ -248,7 +264,7 @@ tooltip > box {
 
 #custom-power {
 	font-size: 16px;
-	padding: 0 8px 0 8px;
+	padding: 0 2px;
 	color: @fg;
 }
 #custom-power:hover {
@@ -257,6 +273,19 @@ tooltip > box {
 }
 
 /* Dividers */
+
+#custom-separator.accent {
+    color: @accent
+}
+#custom-separator.bg-1 {
+    color: @bg-1
+}
+#custom-separator.bg-2 {
+    color: @bg-2
+}
+#custom-separator.bg-3 {
+    color: @bg-3
+}
 
 #custom-left,
 #custom-right {

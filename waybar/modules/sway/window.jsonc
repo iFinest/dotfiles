@@ -1,0 +1,7 @@
+{
+	"sway/window": {
+		"separate-outputs": true,
+		"rewrite": {},
+		"swap-icon-label": false
+	}
+}

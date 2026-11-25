@@ -1,0 +1,9 @@
+{
+	"sway/workspaces": {
+		"all-outputs": false,
+		"format": "{name}",
+		"on-scroll-up": "",
+		"on-scroll-down": "",
+		"cursor": true
+	}
+}

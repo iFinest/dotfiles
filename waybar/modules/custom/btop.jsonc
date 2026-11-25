@@ -3,7 +3,7 @@
 		"format": "󰻠",
 		"min-length": 2,
 		"max-length": 2,
-		"on-click": "kitty -e btop",
+		"on-click": "footclient -e btop",
 		"tooltip": "btop++"
 	}
 }

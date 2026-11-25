@@ -1,34 +1,48 @@
 #!/usr/bin/env bash
 
+AMD_SMI="/opt/rocm/bin/amd-smi"
+
 main() {
-    local option="$1"
-    case "$option" in
-        usage)
-            nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits
-            ;;
-        vram)
-            nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader,nounits |
-                awk -F ',' '{
-                    used = $1 / 1024
-                    total = $2 / 1024
-                    percentage = ($1 / $2) * 100
-                    printf "{\"text\":\"%.1fG\",\"used\":%.1f,\"total\":%.1f,\"percentage\":%.0f}\n", \
-                        used, used, total, percentage
-                }'
-            ;;
-        temperature)
-            local temperature=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits)
-            if (( temperature >= 70 )); then
-                printf '{"text":"%s","class":"critical"}\n' "$temperature"
-            else
-                printf '{"text":"%s"}\n' "$temperature"
-            fi
-            ;;
-        *)
-            printf "Usage: gpu usage|vram|temperature\n"
-            exit 1
-            ;;
-    esac
+	local option="$1"
+	local metrics
+
+	metrics=$("$AMD_SMI" metric -g 0 -u -m -t --json) || exit 1
+
+	case "$option" in
+	usage)
+		jq -r '.gpu_data[0].usage.gfx_activity.value' <<<"$metrics"
+		;;
+
+	vram)
+		jq -c '
+                .gpu_data[0].mem_usage |
+                (.used_vram.value / 1024) as $used |
+                (.total_vram.value / 1024) as $total |
+                {
+                    text: "\(($used * 10 | round) / 10)G",
+                    used: (($used * 10 | round) / 10),
+                    total: (($total * 10 | round) / 10),
+                    percentage: ((.used_vram.value / .total_vram.value * 100) | round)
+                }
+            ' <<<"$metrics"
+		;;
+
+	temperature)
+		local temperature
+		temperature=$(jq -r '.gpu_data[0].temperature.edge.value' <<<"$metrics")
+
+		if ((temperature >= 70)); then
+			printf '{"text":"%s","class":"critical"}\n' "$temperature"
+		else
+			printf '{"text":"%s"}\n' "$temperature"
+		fi
+		;;
+
+	*)
+		printf "Usage: gpu usage|vram|temperature\n"
+		exit 1
+		;;
+	esac
 }
 
 main "$@"

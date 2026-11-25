@@ -1,5 +1,6 @@
 /* Custom Palette */
 @define-color white        #f0f0f0;
+@define-color black        #000000;
 @define-color teal3        #1c5157;
 @define-color teal2        #154247;
 @define-color teal1        #103337;
@@ -13,10 +14,10 @@
 @define-color text         @white;
 @define-color accent       @sunrise4;
 @define-color fg           @text;
-@define-color bg-0         @teal0;
-@define-color bg-1         @teal1;
-@define-color bg-2         @teal2;
-@define-color bg-3         @teal3;
+@define-color bg-0         @black;
+@define-color bg-1         @black;
+@define-color bg-2         @black;
+@define-color bg-3         @black;
 @define-color br           @white;
 @define-color shadow       shade(@bg-0, 0.75);
 

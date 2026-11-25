@@ -33,7 +33,6 @@ hl.window_rule({
 	workspace = gamingWorkspace,
 })
 hl.window_rule({
-	"windowdance",
 	match = {
 		class = gamingApps,
 		title = "^(.+)$",
@@ -61,8 +60,12 @@ hl.window_rule({
 		initial_title = "^$",
 	},
 	center = true,
-	fullscreen = false,
-	fullscreen_state = 0,
+})
+
+hl.window_rule({
+	name = "gd-fullscreen",
+	match = { class = "^(steam_app_322170)$" },
+	fullscreen = true,
 })
 hl.window_rule({
 	match = { class = "^steam_app_3664820$" }, -- Sandboxels Steam AppID
@@ -78,7 +81,7 @@ hl.window_rule({
 	fullscreen_state = 0,
 })
 hl.window_rule({ match = { class = "^(.*[Ll]auncher.*)$" }, float = true, monitor = PRIMARY_MONITOR })
-hl.window_rule({ match = { class = "^(vesktop|discord)$" }, monitor = PRIMARY_MONITOR })
+hl.window_rule({ match = { class = "^(equibop|telegram)$" }, monitor = MONITOR2 })
 hl.window_rule({
 	match = { class = "^(.*[Cc]alc.*)$" },
 	float = true,
@@ -111,20 +114,8 @@ hl.window_rule({
 		"max(20, min(cursor_y - 50, monitor_h - window_h + 20))", -- Y axis clamping
 	},
 })
--- Keep Zoom popups, unstable connection alerts, and toolbars floating cleanly
-hl.window_rule({ match = { class = "^zoom$", title = "^zoom$" }, float = true })
-hl.window_rule({ match = { class = "^zoom$", title = "^Notification$" }, float = true })
-hl.window_rule({ match = { class = "^zoom$", title = "^Settings$" }, float = true })
-hl.window_rule({ match = { class = "^zoom$", title = "^Chat$" }, float = true })
-
--- Optional: Fix the annoying menu/annotation window auto-focus snatching
-hl.window_rule({ match = { class = "^zoom$", title = "^menu window$" }, float = true, no_initial_focus = true })
 
 -- Opacity Overrides
-local terminals = "^(kitty|ghostty|[Kk]onsole|Alacritty|gnome-terminal|xfce[0-9]?-terminal)$"
-
-hl.window_rule({ match = { class = "^(firefox|zen)$" }, opacity = "1.0 override" })
-hl.window_rule({ match = { class = terminals }, opacity = "1.0 override" }) -- Override opacity in favor of terminal settings for opacity. If your terminal doesn't support transparency, you can remove this rule.
 hl.window_rule({
 	match = { class = "^(mpv|org.kde.haruna|.*plex.*|org\\.kde\\.gwenview|.*vlc.*)$" },
 	opacity = "1.0 override",
